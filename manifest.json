@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "CodeChef Clipboard Helper",
+  "version": "1.0.3",
+  "description": "Copy, format, and paste text cleanly into CodeChef editor with proper indentation.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://*.codechef.com/*",
+    "https://www.codechef.com/*",
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CodeChef Clipboard"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.codechef.com/*",
+        "https://www.codechef.com/*"
+      ],
+      "all_frames": true,
+      "match_about_blank": true,
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
