@@ -13,7 +13,7 @@ A Chrome extension designed to bypass editor clipboard restrictions and cleanly 
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/priyadarsh912/codechef-clipboard.git
+   git clone https://github.com/priyadarsh912/codechef-copy-paste-.git
    ```
 2. Open Google Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** toggle in the top-right corner.
